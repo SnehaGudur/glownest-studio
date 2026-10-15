@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowNest Studio | Facials, Nails &amp; Hair Rituals (Portfolio Demo)</title>
+  <meta name="description" content="GlowNest Studio is a fictional home and studio salon created as a web-design portfolio demo. Browse sample services and prices, then plan an enquiry on WhatsApp.">
+  <meta name="theme-color" content="#FAF6EF">
+  <meta property="og:title" content="GlowNest Studio | Portfolio Demo">
+  <meta property="og:description" content="A fictional home and studio salon website: sample services, prices and a WhatsApp enquiry flow.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+ 
+  <div class="demo-bar" role="note">
+    Portfolio demo &middot; GlowNest Studio is a fictional business. All names, prices and hours are samples.
+  </div>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="GlowNest Studio, back to top">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <g fill="currentColor">
+            <ellipse cx="32" cy="18" rx="7" ry="12"/>
+            <ellipse cx="32" cy="18" rx="7" ry="12" transform="rotate(72 32 32)"/>
+            <ellipse cx="32" cy="18" rx="7" ry="12" transform="rotate(144 32 32)"/>
+            <ellipse cx="32" cy="18" rx="7" ry="12" transform="rotate(216 32 32)"/>
+            <ellipse cx="32" cy="18" rx="7" ry="12" transform="rotate(288 32 32)"/>
+          </g>
+          <circle cx="32" cy="32" r="5" fill="#FAF6EF"/>
+        </svg>
+        <span class="logo-text">GlowNest <em>Studio</em></span>
+      </a>
+ 
+      <button class="menu-toggle" id="menuToggle" type="button"
+              aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+ 
+      <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-sm" href="#book">Book now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main id="main">
+ 
+    <!-- ================= HERO ================= -->
+    <!-- <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Home visits &amp; studio appointments</p>
+          <h1 id="hero-title">Your beauty,<br><em>your ritual.</em></h1>
+          <p class="lead">
+            Facials, nails and hair care, taken slowly. Choose a treatment, tell us
+            when suits you, and we&rsquo;ll confirm the details with you on WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#book">Book an Appointment</a>
+            <a class="btn btn-ghost" href="#services">Explore Services</a>
+          </div>
+          <p id="openStatus" class="status" role="status">Opening hours: Mon&ndash;Sat, 10:00 am &ndash; 7:00 pm (sample)</p>
+        </div>
+ 
+        <figure class="hero-art">
+          
+          <img src="images/hero.jpg" width="800" height="1000" fetchpriority="high"
+               alt="Illustration of a cream jar, a blush serum bottle and a sprig of leaves standing on a table in front of an arched window.">
+          <figcaption class="hero-badge">
+            <span>Sample prices from</span>
+            <strong>&#8377;449</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </section> -->
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+
+    <div class="hero-copy">
+      <p class="eyebrow">PERSONALISED BEAUTY · YOUR WAY</p>
+
+      <h1 id="hero-title">
+        Your beauty,<br>
+        <em>your ritual.</em>
+      </h1>
+
+      <p class="lead">
+        Thoughtful facials, nail care and hair treatments,
+        tailored to your routine. Choose your treatment and
+        preferred time, and we’ll help arrange your appointment
+        personally via WhatsApp.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#book">
+          Book Your Experience
+        </a>
+
+        <a class="btn btn-ghost" href="#services">
+          Explore Treatments
+        </a>
+      </div>
+
+      <p class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        Personalised bookings · Home visits &amp; studio
+      </p>
+    </div>
+
+    <figure class="hero-art">
+      <img
+        src="images/hero.jpg"
+        width="800"
+        height="1000"
+        fetchpriority="high"
+        decoding="async"
+        alt="A relaxing facial treatment in a softly lit beauty studio."
+      >
+
+      <figcaption class="hero-badge">
+        <span>BEAUTY, AT YOUR PACE</span>
+        <strong>Made for you.</strong>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+ 
+    <!-- ================= HIGHLIGHT STRIP ================= -->
+    <!-- <section class="strip" aria-label="Studio highlights">
+      <ul class="container strip-grid">
+        <li><strong>At home or in studio</strong><span>You choose where the appointment happens.</span></li>
+        <li><strong>Clear sample pricing</strong><span>Every service lists a price and a duration.</span></li>
+        <li><strong>Enquire in a minute</strong><span>Your message is written for you. You just press Send.</span></li>
+      </ul>
+    </section> -->
+
+<!-- ================= STUDIO HIGHLIGHTS ================= -->
+<section class="strip" aria-label="Why choose GlowNest Studio">
+  <div class="container strip-grid">
+
+    <article class="strip-item">
+      <span class="strip-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 21s7-4.4 7-11V5l-7-3-7 3v5c0 6.6 7 11 7 11Z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+      </span>
+      <div class="strip-content">
+        <span class="strip-number">01 / YOUR COMFORT</span>
+        <h3>Beauty on your terms</h3>
+        <p>Choose a home visit or a studio appointment.</p>
+      </div>
+    </article>
+
+    <article class="strip-item">
+      <span class="strip-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 2"/>
+        </svg>
+      </span>
+      <div class="strip-content">
+        <span class="strip-number">02 / NO GUESSWORK</span>
+        <h3>Know before you book</h3>
+        <p>Explore service prices and treatment durations.</p>
+      </div>
+    </article>
+
+    <article class="strip-item">
+      <span class="strip-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/>
+        </svg>
+      </span>
+      <div class="strip-content">
+        <span class="strip-number">03 / PERSONAL TOUCH</span>
+        <h3>Booking made simple</h3>
+        <p>Send your appointment enquiry through WhatsApp.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+ 
+    <!-- ================= SERVICES ================= -->
+    <!-- <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-center">Treatments</p>
+          <h2 id="services-title">Services, priced plainly</h2>
+          <p>
+            A sample menu with illustrative prices. A real studio would confirm
+            availability and the final price before any appointment.
+          </p>
+        </header>
+ 
+        <div class="filters" role="group" aria-label="Filter services by category">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="face" aria-pressed="false">Face</button>
+          <button type="button" class="filter-btn" data-filter="hands" aria-pressed="false">Hands &amp; Feet</button>
+          <button type="button" class="filter-btn" data-filter="hair" aria-pressed="false">Hair</button>
+        </div>
+ 
+        <div class="cards" id="serviceCards">
+ 
+          <article class="card" data-category="face" data-name="Rose Glow Facial" data-price="999">
+            <div class="card-media">
+              <img src="images/service-rose-glow.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of a large blush rose beside a cream face-cream jar.">
+              <span class="tag">Face</span>
+            </div>
+            <div class="card-body">
+              <h3>Rose Glow Facial</h3>
+              <p class="card-text">A double cleanse, slow face and shoulder massage, then a rose-toned mask. An unhurried hour for tired skin.</p>
+              <p class="card-meta">About 60 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;999</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Rose Glow Facial" aria-label="Book Rose Glow Facial">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="card" data-category="face" data-name="Brightening Cleanup" data-price="599">
+            <div class="card-media">
+              <img src="images/service-cleanup.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of a blush dropper bottle with falling droplets in front of a pale sun.">
+              <span class="tag">Face</span>
+            </div>
+            <div class="card-body">
+              <h3>Brightening Cleanup</h3>
+              <p class="card-text">Cleanse, gentle exfoliation and a short massage. The quick option before an event or a busy week.</p>
+              <p class="card-meta">About 40 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;599</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Brightening Cleanup" aria-label="Book Brightening Cleanup">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="card" data-category="hands" data-name="Classic Mani-Pedi" data-price="799">
+            <div class="card-media">
+              <img src="images/service-mani-pedi.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of three nail polish bottles in rose, champagne and brown beside a leafy sprig.">
+              <span class="tag">Hands &amp; Feet</span>
+            </div>
+            <div class="card-body">
+              <h3>Classic Mani-Pedi</h3>
+              <p class="card-text">Shaping, cuticle care and a hand and foot massage, finished with the polish shade you choose.</p>
+              <p class="card-meta">About 75 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;799</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Classic Mani-Pedi" aria-label="Book Classic Mani-Pedi">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="card" data-category="hands" data-name="Gel Polish Touch-up" data-price="449">
+            <div class="card-media">
+              <img src="images/service-gel-polish.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of five glossy nails in blush, rose, champagne, brown and ivory shades.">
+              <span class="tag">Hands &amp; Feet</span>
+            </div>
+            <div class="card-body">
+              <h3>Gel Polish Touch-up</h3>
+              <p class="card-text">Fresh gel colour on neatly prepared nails. Best as a refresh between full manicures.</p>
+              <p class="card-meta">About 30 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;449</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Gel Polish Touch-up" aria-label="Book Gel Polish Touch-up">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="card" data-category="hair" data-name="Silk Hair Spa" data-price="1199">
+            <div class="card-media">
+              <img src="images/service-hair-spa.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of flowing hair strands in warm tones above a jar of hair mask.">
+              <span class="tag">Hair</span>
+            </div>
+            <div class="card-body">
+              <h3>Silk Hair Spa</h3>
+              <p class="card-text">A scalp massage, a nourishing mask and a smooth blow-dry finish.</p>
+              <p class="card-meta">About 70 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;1,199</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Silk Hair Spa" aria-label="Book Silk Hair Spa">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+          <article class="card" data-category="hair" data-name="Trim &amp; Blow-dry" data-price="499">
+            <div class="card-media">
+              <img src="images/service-blow-dry.svg" width="800" height="600" loading="lazy"
+                   alt="Illustration of a round hair brush resting on soft wavy lines.">
+              <span class="tag">Hair</span>
+            </div>
+            <div class="card-body">
+              <h3>Trim &amp; Blow-dry</h3>
+              <p class="card-text">A tidy trim, then a polished blow-dry with volume or sleekness. Your call.</p>
+              <p class="card-meta">About 45 minutes</p>
+              <div class="card-foot">
+                <p class="price"><span class="price-label">Sample price</span>&#8377;499</p>
+                <a class="btn btn-sm btn-ghost" href="#book" data-service="Trim &amp; Blow-dry" aria-label="Book Trim and Blow-dry">Book this</a>
+              </div>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section> -->
+ 
+   
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section services-section"
+         aria-labelledby="services-title">
+
+  <div class="container">
+
+    <header class="section-head">
+      <p class="eyebrow eyebrow-center">THE GLOWNEST MENU</p>
+
+      <h2 id="services-title">
+        Services, <em>priced plainly.</em>
+      </h2>
+
+      <p>
+        Thoughtfully chosen treatments for your own kind of glow.
+        Explore the menu, find your favourite, and book at your pace.
+      </p>
+    </header>
+
+    <!-- Category Filters -->
+    <div class="filters" role="group"
+         aria-label="Filter services by category">
+
+      <button type="button" class="filter-btn"
+              data-filter="all" aria-pressed="true">All treatments</button>
+
+      <button type="button" class="filter-btn"
+              data-filter="face" aria-pressed="false">Face</button>
+
+      <button type="button" class="filter-btn"
+              data-filter="hands" aria-pressed="false">Hands &amp; Feet</button>
+
+      <button type="button" class="filter-btn"
+              data-filter="hair" aria-pressed="false">Hair</button>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="cards" id="serviceCards">
+
+      <!-- 1. Rose Glow Facial -->
+      <article class="card" data-category="face"
+               data-name="Rose Glow Facial" data-price="999">
+
+        <div class="card-media">
+          <img src="images/service-rose-glow.jpg"
+               width="800" height="600" loading="lazy"
+               alt="Rose petals and a luxurious cream facial moisturiser.">
+
+          <span class="tag">FACE</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Rose Glow Facial</h3>
+
+          <p class="card-text">
+            A double cleanse, relaxing face and shoulder massage,
+            and a soothing rose-inspired mask for a little time to unwind.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 60 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹999</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Rose Glow Facial"
+               aria-label="Book Rose Glow Facial">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Brightening Cleanup -->
+      <article class="card" data-category="face"
+               data-name="Brightening Cleanup" data-price="599">
+
+        <div class="card-media">
+          <img src="images/service-cleanup.jpg"
+               width="800" height="600" loading="lazy"
+               alt="A blush serum bottle and skincare essentials in warm natural light.">
+
+          <span class="tag">FACE</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Brightening Cleanup</h3>
+
+          <p class="card-text">
+            Cleansing, gentle exfoliation and a short massage.
+            A refreshing choice when you want a little extra care.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 40 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹599</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Brightening Cleanup"
+               aria-label="Book Brightening Cleanup">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Classic Mani-Pedi -->
+      <article class="card" data-category="hands"
+               data-name="Classic Mani-Pedi" data-price="799">
+
+        <div class="card-media">
+          <img src="images/service-mani-pedi.jpg"
+               width="800" height="600" loading="lazy"
+               alt="Elegant rose, nude and brown nail polish bottles arranged on a beauty tray.">
+
+          <span class="tag">HANDS &amp; FEET</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Classic Mani-Pedi</h3>
+
+          <p class="card-text">
+            Nail shaping, cuticle care and a relaxing hand
+            and foot massage, finished with your chosen polish.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 75 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹799</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Classic Mani-Pedi"
+               aria-label="Book Classic Mani-Pedi">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Gel Polish Touch-up -->
+      <article class="card" data-category="hands"
+               data-name="Gel Polish Touch-up" data-price="449">
+
+        <div class="card-media">
+          <img src="images/service-gel-polish.jpg"
+               width="800" height="600" loading="lazy"
+               alt="Neatly manicured nails with a glossy nude-pink finish.">
+
+          <span class="tag">HANDS &amp; FEET</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Gel Polish Touch-up</h3>
+
+          <p class="card-text">
+            A fresh gel-colour finish for a polished look.
+            Ideal for a quick refresh between full manicures.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 30 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹449</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Gel Polish Touch-up"
+               aria-label="Book Gel Polish Touch-up">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Silk Hair Spa -->
+      <article class="card" data-category="hair"
+               data-name="Silk Hair Spa" data-price="1199">
+
+        <div class="card-media">
+          <img src="images/service-hair-spa.jpg"
+               width="800" height="600" loading="lazy"
+               alt="A nourishing hair mask jar with a wooden comb and soft towels.">
+
+          <span class="tag">HAIR</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Silk Hair Spa</h3>
+
+          <p class="card-text">
+            A calming scalp massage and nourishing hair mask,
+            followed by a smooth blow-dry finish.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 70 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹1,199</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Silk Hair Spa"
+               aria-label="Book Silk Hair Spa">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Trim & Blow-dry -->
+      <article class="card" data-category="hair"
+               data-name="Trim &amp; Blow-dry" data-price="499">
+
+        <div class="card-media">
+          <img src="images/service-blow-dry.jpg"
+               width="800" height="600" loading="lazy"
+               alt="A round styling brush and softly flowing hair in warm neutral tones.">
+
+          <span class="tag">HAIR</span>
+        </div>
+
+        <div class="card-body">
+          <h3>Trim &amp; Blow-dry</h3>
+
+          <p class="card-text">
+            A tidy trim paired with a polished blow-dry.
+            Choose a look with soft volume or a sleek finish.
+          </p>
+
+          <p class="card-meta">
+            <span aria-hidden="true">◷</span> About 45 minutes
+          </p>
+
+          <div class="card-foot">
+            <p class="price">
+              <span class="price-label">PRICE FROM</span>
+              <strong>₹499</strong>
+            </p>
+
+            <a class="btn btn-sm btn-ghost" href="#book"
+               data-service="Trim &amp; Blow-dry"
+               aria-label="Book Trim and Blow-dry">
+              Book this <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="services-note">
+      <span aria-hidden="true">✳</span>
+      Prices and durations shown are illustrative. Confirm the final
+      price and appointment availability before booking.
+    </p>
+
+  </div>
+</section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <!-- <section id="about" class="section section-tint" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="about-art">
+          <img src="images/about.svg" width="800" height="1000" loading="lazy"
+               alt="Illustration of a round mirror above a wooden shelf holding a bottle, a jar, a leafy sprig and folded towels.">
+        </figure>
+ 
+        <div class="about-copy">
+          <p class="eyebrow">About the studio <span class="sample-tag">Sample copy</span></p>
+          <h2 id="about-title">A quieter kind of salon.</h2>
+          <p>
+            GlowNest Studio is built around one idea: a beauty appointment should feel
+            like a pause, not a chore. Treatments are planned around you, in your own
+            space or ours.
+          </p>
+          <p class="muted">
+            This studio is fictional, created for a web-design portfolio. It has no real
+            customers, reviews, awards or certifications. Replace this text with the
+            owner&rsquo;s own story before using the design for a real business.
+          </p>
+          <ul class="checks">
+            <li><strong>Tell us what you need.</strong> Pick services and a rough time. No account or sign-up.</li>
+            <li><strong>Price confirmed first.</strong> The studio replies with availability and the final price.</li>
+            <li><strong>Home or studio.</strong> Choose whichever suits your day.</li>
+          </ul>
+        </div>
+      </div>
+    </section> -->
+ 
+   
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section section-tint"
+         aria-labelledby="about-title">
+
+  <div class="container about-grid">
+
+    <figure class="about-art">
+      <img
+        src="images/about.jpg"
+        width="800"
+        height="1000"
+        loading="lazy"
+        alt="A serene beauty studio with warm neutral tones and thoughtfully arranged skincare essentials."
+      >
+      <figcaption class="about-image-note">
+        <span>YOUR TIME.</span>
+        <span>YOUR RITUAL.</span>
+      </figcaption>
+    </figure>
+
+    <div class="about-copy">
+
+      <p class="eyebrow">THE GLOWNEST PHILOSOPHY</p>
+
+      <h2 id="about-title">
+        A little pause.<br>
+        <em>A lot of you.</em>
+      </h2>
+
+      <p class="about-intro">
+        Beauty should feel like time well spent.
+        Slow down, feel cared for, and make a little room for yourself.
+      </p>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span class="about-point-number">01</span>
+          <div>
+            <h3>Made personal</h3>
+            <p>Treatments chosen around you.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-point-number">02</span>
+          <div>
+            <h3>Clear from the start</h3>
+            <p>Know the price before you book.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-point-number">03</span>
+          <div>
+            <h3>Comfort, your way</h3>
+            <p>Choose a home visit or studio appointment.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#services" class="about-link">
+        Find your ritual <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <!-- <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-center">Gallery</p>
+          <h2 id="gallery-title">The look of a GlowNest visit</h2>
+          <p>Sample illustrations that set the mood. Replace them with photos of your own work, with each client&rsquo;s permission.</p>
+        </header>
+ 
+        <ul class="gallery">
+          <li class="g g-ritual">
+            <figure>
+              <img src="images/gallery-ritual.svg" width="600" height="800" loading="lazy" alt="Illustration of three skincare bottles on a ledge beneath an arch.">
+              <figcaption>The ritual shelf</figcaption>
+            </figure>
+          </li>
+          <li class="g g-flatlay">
+            <figure>
+              <img src="images/gallery-flatlay.svg" width="600" height="600" loading="lazy" alt="Illustration of a round tray, seen from above, with a jar, a rolled towel and a small flower.">
+              <figcaption>Tray, towel, bloom</figcaption>
+            </figure>
+          </li>
+          <li class="g g-botanical">
+            <figure>
+              <img src="images/gallery-botanical.svg" width="600" height="600" loading="lazy" alt="Illustration of three leafy sprigs fanning out in front of a pale sun.">
+              <figcaption>Botanical notes</figcaption>
+            </figure>
+          </li>
+          <li class="g g-candle">
+            <figure>
+              <img src="images/gallery-candle.svg" width="600" height="800" loading="lazy" alt="Illustration of a lit candle glowing against a dark background beside stacked stones.">
+              <figcaption>Evening glow</figcaption>
+            </figure>
+          </li>
+          <li class="g g-petals">
+            <figure>
+              <img src="images/gallery-petals.svg" width="600" height="600" loading="lazy" alt="Illustration of a large blush flower surrounded by scattered petals and droplets.">
+              <figcaption>Petals &amp; dew</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section gallery-section"
+         aria-labelledby="gallery-title">
+
+  <div class="container">
+
+    <header class="section-head gallery-heading">
+      <p class="eyebrow eyebrow-center">A MOMENT FOR YOURSELF</p>
+
+      <h2 id="gallery-title">
+        Beauty in the <em>little things.</em>
+      </h2>
+
+      <p>
+        Soft details, thoughtful touches, and rituals worth slowing down for.
+      </p>
+    </header>
+
+    <ul class="gallery">
+
+      <!-- 01: Main feature -->
+      <li class="g g-ritual">
+        <figure>
+          <img
+            src="images/gallery-ritual.jpg"
+            width="800"
+            height="1000"
+            loading="lazy"
+            alt="Elegant skincare products arranged on a warm neutral stone shelf."
+          >
+
+          <figcaption>
+            <span class="gallery-number">01 / THE RITUAL</span>
+            <span class="gallery-caption-title">Your moment of calm</span>
+            <span class="gallery-arrow" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+      </li>
+
+      <!-- 02: Skincare flatlay -->
+      <li class="g g-flatlay">
+        <figure>
+          <img
+            src="images/gallery-flatlay.jpg"
+            width="800"
+            height="600"
+            loading="lazy"
+            alt="A spa-inspired arrangement of skincare, folded towels and rose petals."
+          >
+
+          <figcaption>
+            <span class="gallery-number">02 / THE DETAILS</span>
+            <span class="gallery-caption-title">Little luxuries</span>
+            <span class="gallery-arrow" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+      </li>
+
+      <!-- 03: Botanical details -->
+      <li class="g g-botanical">
+        <figure>
+          <img
+            src="images/gallery-botanical.jpg"
+            width="800"
+            height="600"
+            loading="lazy"
+            alt="Fresh botanical leaves in soft natural light against a warm cream background."
+          >
+
+          <figcaption>
+            <span class="gallery-number">03 / NATURAL BEAUTY</span>
+            <span class="gallery-caption-title">Inspired by nature</span>
+            <span class="gallery-arrow" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+      </li>
+
+      <!-- 04: Spa ambience -->
+      <li class="g g-candle">
+        <figure>
+          <img
+            src="images/gallery-candle.jpg"
+            width="800"
+            height="1000"
+            loading="lazy"
+            alt="A softly glowing candle and neatly arranged spa stones in warm evening light."
+          >
+
+          <figcaption>
+            <span class="gallery-number">04 / THE AMBIENCE</span>
+            <span class="gallery-caption-title">A softer kind of glow</span>
+            <span class="gallery-arrow" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+      </li>
+
+      <!-- 05: Rose and skincare -->
+      <li class="g g-petals">
+        <figure>
+          <img
+            src="images/gallery-petals.jpg"
+            width="800"
+            height="600"
+            loading="lazy"
+            alt="Blush rose petals and a skincare cream jar arranged in an elegant beauty still life."
+          >
+
+          <figcaption>
+            <span class="gallery-number">05 / THE FINISHING TOUCH</span>
+            <span class="gallery-caption-title">Petals &amp; softness</span>
+            <span class="gallery-arrow" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+      </li>
+
+    </ul>
+
+    <div class="gallery-footer">
+      <p>Every detail matters. Every visit is your own.</p>
+      <a href="#services" class="gallery-link">
+        Explore our treatments <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+ 
+    <!-- ================= HOW BOOKING WORKS ================= -->
+    <!-- <section id="how" class="section section-dark on-dark" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-center">How booking works</p>
+          <h2 id="how-title">Four simple steps</h2>
+        </header>
+        <ol class="steps">
+          <li><span class="step-num" aria-hidden="true">1</span><h3>Choose</h3><p>Pick one or more services and, if you like, a preferred day and time.</p></li>
+          <li><span class="step-num" aria-hidden="true">2</span><h3>Send</h3><p>WhatsApp opens with your enquiry already written. Press Send there.</p></li>
+          <li><span class="step-num" aria-hidden="true">3</span><h3>Confirm</h3><p>The studio replies with availability and the final price. Nothing is booked until then.</p></li>
+          <li><span class="step-num" aria-hidden="true">4</span><h3>Relax</h3><p>Enjoy your appointment at home or in the studio, at the time you agreed.</p></li>
+        </ol>
+      </div>
+    </section> -->
+ 
+  
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how" class="section section-dark on-dark how-section"
+         aria-labelledby="how-title">
+
+  <div class="container">
+
+    <header class="section-head how-heading">
+      <p class="eyebrow eyebrow-center">
+        <span class="how-eyebrow-line"></span>
+        YOUR EXPERIENCE
+        <span class="how-eyebrow-line"></span>
+      </p>
+
+      <h2 id="how-title">
+        From enquiry to <em>me time.</em>
+      </h2>
+
+      <p class="how-intro">
+        A few simple steps. A little less planning.
+        A little more time for yourself.
+      </p>
+    </header>
+
+    <ol class="steps">
+
+      <li class="how-step">
+        <div class="how-step-top">
+          <span class="step-num" aria-hidden="true">01</span>
+          <span class="how-step-icon" aria-hidden="true">✳</span>
+        </div>
+
+        <div class="how-step-content">
+          <h3>Choose your ritual</h3>
+          <p>
+            Explore our treatments and select what feels right for you.
+            Add your preferred date and time.
+          </p>
+        </div>
+
+        <span class="how-step-bottom">01 — 04</span>
+      </li>
+
+      <li class="how-step">
+        <div class="how-step-top">
+          <span class="step-num" aria-hidden="true">02</span>
+          <span class="how-step-icon" aria-hidden="true">↗</span>
+        </div>
+
+        <div class="how-step-content">
+          <h3>Send your enquiry</h3>
+          <p>
+            Your appointment message is prepared on WhatsApp.
+            Check the details and press Send.
+          </p>
+        </div>
+
+        <span class="how-step-bottom">02 — 04</span>
+      </li>
+
+      <li class="how-step">
+        <div class="how-step-top">
+          <span class="step-num" aria-hidden="true">03</span>
+          <span class="how-step-icon" aria-hidden="true">✓</span>
+        </div>
+
+        <div class="how-step-content">
+          <h3>Confirm the details</h3>
+          <p>
+            We'll confirm availability, your appointment location,
+            and the final price before booking.
+          </p>
+        </div>
+
+        <span class="how-step-bottom">03 — 04</span>
+      </li>
+
+      <li class="how-step">
+        <div class="how-step-top">
+          <span class="step-num" aria-hidden="true">04</span>
+          <span class="how-step-icon" aria-hidden="true">♡</span>
+        </div>
+
+        <div class="how-step-content">
+          <h3>Enjoy your moment</h3>
+          <p>
+            Settle in and enjoy your treatment, at home or
+            in the studio, at your confirmed time.
+          </p>
+        </div>
+
+        <span class="how-step-bottom">YOUR TIME, AT LAST</span>
+      </li>
+
+    </ol>
+
+    <div class="how-footer">
+      <p>No account. No upfront booking confusion. Just a simple enquiry.</p>
+      <a href="#book" class="how-cta">
+        Plan your visit <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= BOOK / ENQUIRY ================= -->
+<section id="book" class="section booking-section"
+         aria-labelledby="book-title">
+
+  <div class="container container-wide">
+
+    <header class="section-head booking-heading">
+      <p class="eyebrow eyebrow-center">YOUR NEXT LITTLE LUXURY</p>
+      <h2 id="book-title">Your time starts <em>here.</em></h2>
+      <p>
+        Choose your treatments, tell us what suits you,
+        and we'll prepare your WhatsApp enquiry.
+      </p>
+      <span class="booking-reassurance">
+        <span aria-hidden="true">✓</span>
+        No account needed · Confirm before you book
+      </span>
+    </header>
+
+    <div class="enquiry">
+
+      <!-- FORM -->
+      <form id="enquiryForm" class="enquiry-form" novalidate>
+
+        <div class="booking-form-heading">
+          <span class="booking-kicker">LET'S PERSONALISE YOUR VISIT</span>
+          <h3>Make it yours.</h3>
+          <p>Just a few details to get started.</p>
+        </div>
+
+        <fieldset>
+          <legend>
+            <span class="booking-step">01</span>
+            Choose your treatments
+          </legend>
+
+          <div id="serviceChoices" class="choices choices-2col"></div>
+
+          <p class="selected-line" id="selectedLine" aria-live="polite">
+            No services selected yet.
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <span class="booking-step">02</span>
+            Where shall we meet?
+          </legend>
+
+          <div class="choices choices-row">
+            <label class="choice">
+              <input type="radio" name="visit" value="Home visit" checked>
+              <span>
+                <span class="choice-title">At home</span>
+                <span class="choice-description">Beauty, in your own space</span>
+              </span>
+            </label>
+
+            <label class="choice">
+              <input type="radio" name="visit" value="Studio visit">
+              <span>
+                <span class="choice-title">At the studio</span>
+                <span class="choice-description">A little change of scene</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <span class="booking-step">03</span>
+            Find your preferred time
+          </legend>
+
+          <div class="field-row">
+
+            <div class="field">
+              <label for="prefDate">Preferred date <span>(optional)</span></label>
+              <input type="date" id="prefDate" name="prefDate"
+                     aria-describedby="dateHint">
+            </div>
+
+            <div class="field">
+              <label for="prefTime">Preferred time <span>(optional)</span></label>
+              <select id="prefTime" name="prefTime">
+                <option value="">Any suitable time</option>
+                <option>Morning (10 am – 1 pm)</option>
+                <option>Afternoon (1 pm – 4 pm)</option>
+                <option>Evening (4 pm – 7 pm)</option>
+              </select>
+            </div>
+
+          </div>
+
+          <p class="field-hint" id="dateHint" role="status"></p>
+
+          <div class="field">
+            <label for="custName">What should we call you? <span>(optional)</span></label>
+            <input type="text" id="custName" name="custName"
+                   autocomplete="given-name" maxlength="40"
+                   placeholder="Your first name">
+          </div>
+        </fieldset>
+
+        <button type="button" class="link-btn" id="resetBtn">
+          <span aria-hidden="true">↺</span> Clear selections
+        </button>
+
+      </form>
+
+      <!-- STICKY-STYLE SUMMARY PANEL -->
+      <aside class="enquiry-summary" aria-labelledby="summaryTitle">
+
+        <div class="summary-top">
+          <span class="summary-eyebrow">YOUR GLOWNEST EXPERIENCE</span>
+          <h3 id="summaryTitle">Your visit, your way.</h3>
+          <p>Your treatment selection and enquiry details, all in one place.</p>
+        </div>
+
+        <div class="summary-price">
+          <span class="total-label" id="totalLine">
+            Estimated total (sample prices): ₹0
+          </span>
+          <span class="summary-price-note">
+            Illustrative pricing · Final price confirmed before booking
+          </span>
+        </div>
+
+        <div class="summary-message">
+          <div class="preview-header">
+            <span class="preview-label" id="previewLabel">YOUR MESSAGE PREVIEW</span>
+            <span class="preview-status">WhatsApp enquiry</span>
+          </div>
+
+          <div class="preview" id="messagePreview"
+               aria-labelledby="previewLabel"></div>
+        </div>
+
+        <a class="btn btn-block summary-send" id="sendBtn"
+           href="#book" target="_blank" rel="noopener noreferrer"
+           aria-disabled="true">
+          Continue to WhatsApp <span aria-hidden="true">↗</span>
+        </a>
+
+        <p class="note" id="sendHint" role="status">
+          Choose at least one service to continue.
+        </p>
+
+        <div class="summary-trust">
+          <span aria-hidden="true">♡</span>
+          <p>Your enquiry isn't sent automatically. Review your message and press Send in WhatsApp. Your appointment is confirmed only after the studio replies.</p>
+        </div>
+
+        <p class="demo-note" data-placeholder-note>
+          Portfolio demo: the WhatsApp number is a placeholder.
+          Update it in <code>script.js</code> before using this form for a real business.
+        </p>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews" class="section section-tint reviews-section"
+         aria-labelledby="reviews-title">
+
+  <div class="container narrow">
+
+    <header class="section-head">
+      <p class="eyebrow eyebrow-center">A NOTE ON TRUST</p>
+      <h2 id="reviews-title">Every visit should feel special.</h2>
+      <p>
+        Thoughtful care, clear communication, and time set aside just for you.
+      </p>
+    </header>
+
+    <div class="placeholder-card review-demo-card">
+      <span class="sample-tag">Portfolio preview</span>
+
+      <span class="review-quote-mark" aria-hidden="true">“</span>
+
+      <blockquote>
+        Your experience matters. This space is reserved for genuine
+        words from GlowNest clients.
+      </blockquote>
+
+      <div class="review-divider"></div>
+
+      <p class="placeholder-by">REAL EXPERIENCES · SHARED WITH PERMISSION</p>
+
+      <p class="muted">
+        No client testimonials are claimed in this demo.
+        Add verified reviews here when they become available.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="section faq-section"
+         aria-labelledby="faq-title">
+
+  <div class="container narrow-wide">
+
+    <header class="section-head faq-heading">
+      <p class="eyebrow eyebrow-center">BEFORE YOUR VISIT</p>
+      <h2 id="faq-title">A few things <em>to know.</em></h2>
+      <p>Everything you need to feel comfortable before you enquire.</p>
+    </header>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>
+          <span>How early should I book?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            We recommend enquiring a few days ahead, especially for weekends.
+            Your preferred slot is confirmed directly by the studio.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>Can I book a home visit?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Home visits may be available within the studio's service area.
+            Share your preferred location when enquiring to confirm availability.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>How will I know the final price?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            The displayed prices are illustrative. The studio will confirm
+            the final cost and availability before your appointment is booked.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>What if I need to reschedule?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Contact the studio on WhatsApp as early as possible.
+            The rescheduling policy and alternative slots can be confirmed directly.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>What about sensitive skin or allergies?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Mention any sensitivities or allergies before booking so the
+            provider can discuss appropriate products and precautions with you.
+          </p>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="faq-footer">
+      <p>Still have a question?</p>
+      <a href="#book" class="faq-contact-link">
+        Send an enquiry <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <p class="faq-demo-note">
+      Demo content: confirm actual service areas, policies, payment methods
+      and treatment information with the business before publishing.
+    </p>
+
+  </div>
+</section>
+
+ 
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-tint" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-center">Contact</p>
+          <h2 id="contact-title">Say hello</h2>
+        </header>
+ 
+        <div class="contact-grid">
+          <div class="contact-box">
+            <h3>Opening hours <span class="sample-tag">Sample</span></h3>
+            <dl class="hours">
+              <div><dt>Monday &ndash; Saturday</dt><dd>10:00 am &ndash; 7:00 pm</dd></div>
+              <div><dt>Sunday</dt><dd>By appointment only</dd></div>
+            </dl>
+            <p class="note">Times are Indian Standard Time (IST).</p>
+          </div>
+ 
+          <div class="contact-box">
+            <h3>Service area <span class="sample-tag">Sample</span></h3>
+            <p>Home visits and studio appointments within about 8 km of &ldquo;Sample Nagar, Anytown&rdquo;.</p>
+            <p class="note">This is not a real address.</p>
+          </div>
+ 
+          <div class="contact-box contact-cta">
+            <h3>Message us</h3>
+            <p>Tap the button and WhatsApp opens with a ready-made enquiry. Replies are not instant, and an appointment is only confirmed once the studio says so.</p>
+            <a class="btn btn-block wa-link" href="#book"
+               data-message="Hello GlowNest Studio! I would like to know about services and available time slots."
+               target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            <p class="demo-note" data-placeholder-note>Demo only: placeholder number. Replace it in <code>script.js</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer on-dark">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">GlowNest <em>Studio</em></p>
+        <p>A fictional home and studio salon, designed as a portfolio demonstration.</p>
+      </div>
+ 
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-title">Explore</h2>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#how">How booking works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+ 
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul>
+          <li><a class="wa-link" href="#book" data-message="Hello GlowNest Studio! I would like to make an enquiry." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a></li>
+          <li>Mon&ndash;Sat, 10 am &ndash; 7 pm (sample)</li>
+          <li>Sample Nagar, Anytown (sample area)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>&copy; <span id="year">2026</span> GlowNest Studio &middot; Fictional demo website. All details are placeholders.</p>
+    </div>
+  </footer>
+ 
+  <!-- Floating WhatsApp button (shown on small screens only) -->
+  <a class="wa-float wa-link" href="#book"
+     data-message="Hello GlowNest Studio! I would like to ask about an appointment."
+     target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 5v2h10V8H7zm0 4v2h7v-2H7z"/>
+    </svg>
+    <span>Chat</span>
+  </a>
+ 
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top" hidden>&uarr;</a>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
