@@ -18,7 +18,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
  
   <div class="demo-bar" role="note">
-    Portfolio demo &middot; GlowNest Studio is a fictional business. All names, prices and hours are samples.
+    Portfolio preview &middot; GlowNest Studio is fictional. Services, prices, hours and contact details are samples.
   </div>
  
   <header class="site-header">
@@ -91,23 +91,25 @@
   <div class="container hero-grid">
 
     <div class="hero-copy">
-      <p class="eyebrow">PERSONALISED BEAUTY · YOUR WAY</p>
+      <p class="eyebrow">BEAUTY &amp; SELF-CARE STUDIO</p>
 
       <h1 id="hero-title">
         Your beauty,<br>
-        <em>your ritual.</em>
+        <em>beautifully cared for.</em>
       </h1>
 
       <p class="lead">
-        Thoughtful facials, nail care and hair treatments,
-        tailored to your routine. Choose your treatment and
-        preferred time, and we’ll help arrange your appointment
-        personally via WhatsApp.
+        Discover thoughtfully designed beauty and self-care treatments
+        in a calm, welcoming studio. Explore our services and enquire
+        about your next appointment.
       </p>
 
       <div class="hero-actions">
-        <a class="btn" href="#book">
-          Book Your Experience
+        <a class="btn wa-link" href="#book"
+           data-message="Hello GlowNest Studio! I would like to enquire about an appointment. Please share your available treatments and confirm availability."
+           target="_blank" rel="noopener noreferrer"
+           aria-describedby="bookingDemoNote">
+          Book on WhatsApp
         </a>
 
         <a class="btn btn-ghost" href="#services">
@@ -115,9 +117,11 @@
         </a>
       </div>
 
+      <p class="hero-location">Serving <span>[SAMPLE LOCAL AREA]</span></p>
+
       <p class="status">
         <span class="status-dot" aria-hidden="true"></span>
-        Personalised bookings · Home visits &amp; studio
+        Home visits &amp; studio appointments by enquiry
       </p>
     </div>
 
@@ -128,7 +132,7 @@
         height="1000"
         fetchpriority="high"
         decoding="async"
-        alt="A relaxing facial treatment in a softly lit beauty studio."
+        alt="A spa practitioner applies a creamy facial mask to a client in warm light."
       >
 
       <figcaption class="hero-badge">
@@ -367,8 +371,8 @@
     <div class="cards" id="serviceCards">
 
       <!-- 1. Rose Glow Facial -->
-      <article class="card" data-category="face"
-               data-name="Rose Glow Facial" data-price="999">
+       <article class="card is-signature" data-category="face"
+                data-name="Rose Glow Facial" data-price="999" data-duration="60">
 
         <div class="card-media">
           <img src="images/face-treatment.jpg"
@@ -376,6 +380,7 @@
                alt="A warm facial mask treatment being applied in a spa.">
 
           <span class="tag">FACE</span>
+          <span class="signature-tag">Signature treatment</span>
         </div>
 
         <div class="card-body">
@@ -387,13 +392,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 60 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 60 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹999</strong>
+              <strong data-service-price>₹999</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"
@@ -406,8 +411,8 @@
       </article>
 
       <!-- 2. Brightening Cleanup -->
-      <article class="card" data-category="face"
-               data-name="Brightening Cleanup" data-price="599">
+       <article class="card" data-category="face"
+                data-name="Brightening Cleanup" data-price="599" data-duration="40">
 
         <div class="card-media">
           <img src="images/service-cleanup.jpg"
@@ -426,13 +431,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 40 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 40 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹599</strong>
+              <strong data-service-price>₹599</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"
@@ -445,8 +450,8 @@
       </article>
 
       <!-- 3. Classic Mani-Pedi -->
-      <article class="card" data-category="hands"
-               data-name="Classic Mani-Pedi" data-price="799">
+       <article class="card is-signature" data-category="hands"
+                data-name="Classic Mani-Pedi" data-price="799" data-duration="75">
 
         <div class="card-media">
           <img src="images/service-mani-pedi.jpg"
@@ -454,6 +459,7 @@
                alt="Elegant rose, nude and brown nail polish bottles arranged on a beauty tray.">
 
           <span class="tag">HANDS &amp; FEET</span>
+          <span class="signature-tag">Signature treatment</span>
         </div>
 
         <div class="card-body">
@@ -465,13 +471,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 75 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 75 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹799</strong>
+              <strong data-service-price>₹799</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"
@@ -484,8 +490,8 @@
       </article>
 
       <!-- 4. Gel Polish Touch-up -->
-      <article class="card" data-category="hands"
-               data-name="Gel Polish Touch-up" data-price="449">
+       <article class="card" data-category="hands"
+                data-name="Gel Polish Touch-up" data-price="449" data-duration="30">
 
         <div class="card-media">
           <img src="images/service-gel-polish.jpg"
@@ -504,13 +510,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 30 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 30 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹449</strong>
+              <strong data-service-price>₹449</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"
@@ -523,8 +529,8 @@
       </article>
 
       <!-- 5. Silk Hair Spa -->
-      <article class="card" data-category="hair"
-               data-name="Silk Hair Spa" data-price="1199">
+       <article class="card is-signature" data-category="hair"
+                data-name="Silk Hair Spa" data-price="1199" data-duration="70">
 
         <div class="card-media">
           <img src="images/service-hair-spa.jpg"
@@ -532,6 +538,7 @@
                alt="A nourishing hair mask jar with a wooden comb and soft towels.">
 
           <span class="tag">HAIR</span>
+          <span class="signature-tag">Signature treatment</span>
         </div>
 
         <div class="card-body">
@@ -543,13 +550,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 70 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 70 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹1,199</strong>
+              <strong data-service-price>₹1,199</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"
@@ -562,8 +569,8 @@
       </article>
 
       <!-- 6. Trim & Blow-dry -->
-      <article class="card" data-category="hair"
-               data-name="Trim &amp; Blow-dry" data-price="499">
+       <article class="card" data-category="hair"
+                data-name="Trim &amp; Blow-dry" data-price="499" data-duration="45">
 
         <div class="card-media">
           <img src="images/hair-rollers.jpg"
@@ -582,13 +589,13 @@
           </p>
 
           <p class="card-meta">
-            <span aria-hidden="true">◷</span> About 45 minutes
+            <span aria-hidden="true">◷</span> <span data-service-duration>About 45 minutes</span>
           </p>
 
           <div class="card-foot">
             <p class="price">
               <span class="price-label">PRICE FROM</span>
-              <strong>₹499</strong>
+              <strong data-service-price>₹499</strong>
             </p>
 
             <a class="btn btn-sm btn-ghost" href="#book"

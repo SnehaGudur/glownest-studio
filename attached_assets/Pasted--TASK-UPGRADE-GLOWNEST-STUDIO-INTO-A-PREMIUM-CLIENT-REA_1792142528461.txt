@@ -1,0 +1,430 @@
+# TASK: UPGRADE GLOWNEST STUDIO INTO A PREMIUM, CLIENT-READY SALON WEBSITE
+
+Act as a senior UI/UX designer, conversion-focused web designer, frontend developer, accessibility specialist, and QA engineer.
+
+I have an existing salon website demo called **GlowNest Studio**, deployed on Netlify:
+
+https://dapper-cocada-910134.netlify.app/
+
+Your task is to inspect my existing project files and upgrade the website to a premium, professional, visually attractive, conversion-focused website that I can confidently demonstrate to real salon owners as a sample of my website development service.
+
+## CRITICAL RULES — READ BEFORE MODIFYING
+
+1. Inspect the complete existing project before making any changes.
+2. Identify the HTML, CSS, JavaScript, images, assets, and any other relevant files.
+3. Preserve the existing brand identity, working components, service information, page sections, and useful interactions.
+4. Do not rebuild the project from scratch unless absolutely necessary.
+5. Do not remove working functionality simply to simplify the code.
+6. Do not introduce a new framework, package, dependency, or paid service unless essential.
+7. Keep the website compatible with its current deployment environment and existing technology stack.
+8. Do not modify unrelated files or introduce duplicate sections, duplicate event listeners, conflicting CSS, or redundant JavaScript.
+9. Do not invent a real salon address, telephone number, customer review, business credential, certification, business result, or other factual claim.
+10. This is a fictional portfolio demonstration. Clearly distinguish sample data from verified business information.
+11. Implement the changes directly in the existing files rather than only giving me suggestions or example snippets.
+12. After modifying the project, explain exactly which files changed and how I can test the website.
+
+# PRIORITY 1: TRANSFORM THE HERO SECTION INTO A HIGH-CONVERTING FIRST SCREEN
+
+## Objective
+
+Within the first few seconds, visitors should understand:
+- What GlowNest Studio offers.
+- Which local area it serves.
+- What makes its services appealing.
+- How to enquire or book an appointment.
+
+## Required improvements
+
+### A. Rewrite the hero messaging
+
+Keep the existing elegant brand personality, but improve the headline so it communicates the salon's services and customer benefit more clearly.
+
+Use this copy as a starting point:
+
+Eyebrow:
+BEAUTY & SELF-CARE STUDIO
+
+Headline:
+Your Beauty, Beautifully Cared For.
+
+Supporting text:
+Discover thoughtfully designed beauty and self-care treatments in a calm, welcoming studio. Explore our services and enquire about your next appointment.
+
+Location line:
+Serving [SAMPLE LOCAL AREA]
+
+Because the business is fictional, retain an unmistakable placeholder for the location until it is replaced with a verified service area. Do not imply that the fictional salon is a real local business.
+
+If the existing project already contains stronger, factually supported messaging, refine it rather than adding unnecessary text.
+
+### B. Upgrade the hero photography
+
+Use a high-quality, relevant salon interior or beauty-treatment photograph that suits a premium beauty brand.
+
+Requirements:
+- Use a real, relevant photographic asset rather than a generic abstract background.
+- Prefer warm natural lighting, elegant interiors, realistic skin tones, and a refined neutral palette.
+- Avoid distorted faces, unrealistic hands, excessive retouching, watermarks, or unrelated stock photography.
+- Reuse existing suitable images where possible.
+- If a replacement image is needed, use a properly licensed or otherwise authorized image with a stable source.
+- Do not invent client photographs or portray stock models as actual customers.
+- Optimize the image for responsive layouts and loading performance.
+- Add meaningful alt text for informative images and empty alt text for purely decorative images.
+
+Do not let the photograph make the headline or buttons difficult to read.
+
+### C. Improve the CTA hierarchy
+
+The primary CTA must be:
+
+**Book on WhatsApp**
+
+The secondary CTA must be:
+
+**Explore Treatments**
+
+Requirements:
+- Make the primary CTA visually dominant.
+- Keep the secondary CTA clearly visible but less prominent.
+- The primary CTA must use the correct WhatsApp enquiry flow.
+- The secondary CTA must scroll smoothly to the service menu.
+- Make both buttons accessible by keyboard and usable on mobile.
+- Avoid multiple competing primary buttons in the hero.
+- Provide visible focus states and adequate contrast.
+
+The WhatsApp button must not falsely imply that an appointment is confirmed.
+
+# PRIORITY 2: MAKE THE SERVICE MENU EASIER TO BUY FROM
+
+## Objective
+
+Make it easier for visitors to understand the treatments, compare options, identify signature services, and enquire about a specific treatment.
+
+### A. Preserve the existing six treatments
+
+Inspect the current service data and retain the six existing treatments, their descriptions, durations, prices, and categories unless a specific defect requires correction.
+
+Do not invent new prices, discounts, durations, treatment benefits, or medical claims.
+
+### B. Highlight two or three signature treatments
+
+Choose two or three existing treatments to feature more prominently.
+
+Select them based on the current content, visual suitability, and usefulness as an introductory offering. Do not claim that they are bestsellers, most popular, award-winning, or customer favorites without evidence.
+
+Use a subtle visual treatment such as:
+- A refined featured card.
+- A small "Signature Treatment" label.
+- Improved image presentation.
+- A clear treatment description and booking CTA.
+
+Keep the remaining treatments equally accessible.
+
+### C. Improve service photography
+
+Where suitable photographs are available:
+- Associate each image with the correct treatment.
+- Maintain consistent image ratios and cropping.
+- Use responsive image sizing.
+- Provide descriptive alt text.
+- Avoid using the same unrelated image for every treatment.
+- Do not present illustrative images as proof of actual treatment results.
+
+If no suitable verified or authorized photograph exists, use an honest visual placeholder rather than fabricating evidence.
+
+### D. Improve the service cards
+
+Every treatment card should clearly show:
+- Treatment name.
+- Short, useful description.
+- Duration.
+- Price.
+- A clear booking or enquiry action.
+
+Use consistent spacing, typography, alignment, and button placement.
+
+Make the design easy to scan on mobile, without excessive animations or long descriptions.
+
+### E. Connect service selection to booking
+
+When a visitor clicks a treatment's booking CTA:
+1. Select that exact treatment in the booking form.
+2. Update the estimated total correctly.
+3. Scroll to the booking section.
+4. Make the selected treatment visually apparent.
+5. Ensure the WhatsApp message includes the correct treatment name, duration, and applicable price.
+
+Do not create separate booking logic for every card if the existing reusable booking system can handle all treatments.
+
+# PRIORITY 3: MAKE THE BOOKING FLOW RELIABLE END TO END
+
+## Objective
+
+The existing booking section includes service selection, appointment preferences, an estimated total, and a WhatsApp message preview.
+
+Preserve and improve this functionality rather than replacing it with a decorative form.
+
+### A. Service selection
+
+Implement or correct the following behavior:
+- Allow a visitor to select one or multiple treatments if that is the intended behavior of the existing design.
+- Clearly indicate selected treatments.
+- Prevent duplicate selections.
+- Update the estimated total whenever a treatment is added or removed.
+- Recalculate totals from the authoritative service data rather than from hardcoded values in multiple places.
+- Provide a clear way to remove individual treatments.
+- Provide a clear way to clear all selections.
+- Show a helpful empty state when no treatments are selected.
+
+Do not silently change the current single-selection or multi-selection behavior without inspecting the intended design first. Preserve the intended behavior and make it consistent across the service cards and booking form.
+
+### B. Date and time handling
+
+Inspect the current date and time controls.
+
+Ensure:
+- Past appointment dates cannot be selected.
+- Invalid dates and times are rejected.
+- Required fields are validated.
+- Date and time values are included correctly in the generated enquiry.
+- Date parsing and formatting do not shift the selected date because of timezone conversion.
+- The interface explains any restrictions on appointment times.
+- No appointment availability is implied unless a real availability system exists.
+
+If the demo has no verified opening hours or available slots, clearly identify the controls as appointment preferences rather than confirmed availability.
+
+### C. Accurate totals
+
+Ensure:
+- The displayed estimated total matches the selected services.
+- Removing a service updates the total.
+- Clearing the form resets the total.
+- The currency format is consistent with the existing sample pricing.
+- Any taxes, deposits, discounts, or extra charges are included only when explicitly defined and verified.
+
+Label the amount as an estimate if it is not a final confirmed quotation.
+
+### D. WhatsApp enquiry generation
+
+Inspect the existing WhatsApp URL generation and message-preview logic.
+
+The final enquiry must contain:
+- A polite introductory message.
+- Selected treatment names.
+- Applicable durations and prices.
+- The estimated total, if applicable.
+- The visitor's preferred date and time.
+- Any optional customer details collected by the existing form.
+- A clear request for the salon to confirm availability.
+
+Use URL encoding correctly for spaces, line breaks, ampersands, currency symbols, and other special characters.
+
+Use one centralized function for generating the message so the preview and final WhatsApp link cannot produce different information.
+
+Use the existing sample WhatsApp number only as clearly labeled demo data. Do not replace it with an invented real number.
+
+If the number is still a placeholder, prevent the demo from misleading visitors into thinking a real salon will receive the message. Show a clear demonstration notice or disable actual sending until a valid number is configured.
+
+### E. Enquiry is not confirmation
+
+Display a concise notice near the booking CTA:
+
+"Your request is an enquiry, not a confirmed appointment. The studio will confirm availability with you."
+
+Do not display success messages suggesting that an appointment has been booked when the form only opens WhatsApp.
+
+If WhatsApp cannot open, provide a useful fallback message instead of silently failing.
+
+### F. Form usability and privacy
+
+- Use clear labels, not placeholder text alone.
+- Show helpful validation messages beside invalid fields.
+- Preserve user selections when correcting an unrelated field.
+- Allow the visitor to review the message before sending.
+- Collect only information necessary for the enquiry.
+- Do not log or expose personal information in the console.
+- Do not add analytics, external form services, or backend storage without approval.
+
+# PRIORITY 4: CREATE A CLIENT HANDOVER CHECKLIST FOR REAL BUSINESS DETAILS
+
+The demo must remain transparent while allowing me to customize it for real clients later.
+
+Create a simple client configuration and handover checklist, preferably as a separate project document such as CLIENT_HANDOVER.md, unless the project already has an appropriate documentation file.
+
+The checklist must cover:
+
+## Business identity
+- Approved business name and logo.
+- Verified service area or address.
+- Business phone and WhatsApp number.
+- Business email, if required.
+- Approved brand colors and fonts.
+
+## Services and pricing
+- Approved treatment names and descriptions.
+- Confirmed prices and durations.
+- Verified service photographs and usage rights.
+- Confirmed opening hours.
+- Any valid service restrictions or booking policies.
+
+## Customer enquiries
+- WhatsApp number tested with the business owner.
+- Correct service-to-booking mapping.
+- Enquiry message approved by the owner.
+- Appointment confirmation process explained.
+- Privacy notice and any necessary consent requirements reviewed.
+
+## Website delivery
+- Domain ownership and DNS configuration, if applicable.
+- Hosting and deployment ownership.
+- HTTPS and deployment verification.
+- Mobile and desktop testing.
+- Links, forms, buttons, and contact information checked.
+- Accessibility and performance checks completed.
+- Owner approval before publication.
+- Handover of files and instructions.
+- Agreement about maintenance, revisions, and any third-party charges.
+
+Clearly separate demo placeholders from verified client data.
+
+Do not expose secrets, credentials, private keys, or access tokens in source code, documentation, or a public repository.
+
+# PRIORITY 5: POLISH THE WEBSITE TO A PREMIUM STANDARD
+
+Retain the existing warm, elegant, premium beauty-studio aesthetic.
+
+Do not add visual complexity just for the sake of looking modern.
+
+### A. Visual consistency
+
+Review:
+- Typography hierarchy.
+- Heading and paragraph line lengths.
+- Consistent section spacing.
+- Button sizing and styling.
+- Card borders, shadows, and corner radii.
+- Color consistency.
+- Image cropping and aspect ratios.
+- Alignment between headings, descriptions, and content.
+- Consistency of icons and labels.
+
+Use a restrained design system with consistent spacing and typography rather than introducing many unrelated styles.
+
+### B. Responsive behavior
+
+Inspect and fix:
+- Mobile navigation.
+- Hero layout on small screens.
+- Service-card grids.
+- Gallery layout.
+- Booking form width and controls.
+- Button wrapping and tap targets.
+- Horizontal overflow.
+- Footer layout.
+- Long service names and prices.
+- Tablet and desktop breakpoints.
+
+The website must remain usable on narrow mobile screens without horizontal scrolling.
+
+### C. Accessibility
+
+Check:
+- Semantic HTML landmarks.
+- Logical heading order.
+- Keyboard navigation.
+- Visible focus states.
+- Accessible button names.
+- Form labels and validation messages.
+- Image alt text.
+- Sufficient text contrast.
+- Reduced-motion preferences.
+- Clear feedback when the booking selection changes.
+
+Do not communicate selected, invalid, or successful states through color alone.
+
+### D. Performance
+
+- Remove redundant CSS and JavaScript only after checking their usage.
+- Optimize image sizes and formats when practical.
+- Lazy-load below-the-fold images where appropriate.
+- Do not lazy-load the main hero image if doing so would delay the primary visual.
+- Specify image dimensions or aspect ratios to reduce layout shifts.
+- Avoid unnecessary external libraries.
+- Avoid excessive animation, autoplay media, and heavy effects.
+- Check for console errors, broken assets, and failed requests.
+
+### E. Gallery, FAQs, and footer
+
+Preserve the existing gallery, FAQs, booking explanation, contact section, and other useful sections.
+
+Improve consistency and usability without duplicating content.
+
+Do not invent testimonials, ratings, customer statistics, or business claims.
+
+Ensure footer links work and all displayed contact information remains clearly identified as sample data until verified.
+
+# TECHNICAL IMPLEMENTATION REQUIREMENTS
+
+Before editing:
+1. Inspect the complete codebase.
+2. Locate the source of service data, prices, durations, booking selections, totals, and WhatsApp message generation.
+3. Identify existing duplicated logic and dependencies.
+4. Plan the smallest reliable set of changes.
+
+During implementation:
+1. Reuse existing functions and components where practical.
+2. Keep business data in one authoritative location where feasible.
+3. Use safe DOM updates and proper URL encoding.
+4. Preserve existing navigation and working features.
+5. Avoid broad CSS selectors that could break unrelated components.
+6. Avoid adding duplicate IDs or event handlers.
+7. Preserve the existing deployment configuration.
+8. Do not use fake form submissions or decorative buttons that appear functional.
+9. Do not change business facts without evidence.
+
+# TESTING REQUIREMENTS
+
+After implementation, perform the checks supported by the available environment.
+
+Test at minimum:
+
+1. The hero headline, image, and both CTA buttons.
+2. Navigation and smooth scrolling.
+3. All six service cards.
+4. Each treatment's booking CTA.
+5. Single or multiple selection, according to the intended existing behavior.
+6. Removing a selected treatment.
+7. Clearing all selections.
+8. Correct total calculation.
+9. Empty-form validation.
+10. Past-date validation.
+11. Date and time formatting.
+12. WhatsApp message contents and URL encoding.
+13. Placeholder-number handling.
+14. Confirmation-notice wording.
+15. Mobile navigation and responsive layouts.
+16. Console errors and missing assets.
+17. Keyboard accessibility and visible focus.
+18. Existing gallery, FAQ, contact, and footer functionality.
+
+If browser automation or runtime testing is available, run the tests. If it is unavailable, do not pretend the tests passed; provide manual verification instructions and identify any untested behavior.
+
+# FINAL DELIVERABLES
+
+When finished, provide:
+
+1. A summary of the improvements.
+2. A list of all modified and newly created files.
+3. An explanation of any booking logic changes.
+4. A list of placeholder values that still require real client information.
+5. Test results, clearly distinguishing passed, failed, and untested checks.
+6. Any remaining issues that prevent production use.
+7. Exact instructions for running the project locally and redeploying it to Netlify.
+
+## FINAL SUCCESS CRITERION
+
+The finished website should feel like a credible, premium small-business website rather than a generic AI-generated template.
+
+It should clearly communicate the service, help visitors choose a treatment, produce accurate appointment enquiries, work across mobile and desktop, preserve the existing project structure, and be straightforward to customize for a paying salon client.
+
+Start by inspecting the existing files. Then implement the improvements directly, test them, and report the actual results. Do not stop after producing a plan.
