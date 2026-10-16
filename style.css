@@ -1573,7 +1573,14 @@ details p { padding-bottom: 1.25rem; max-width: 38em; color: var(--text-soft); }
 
 #book.booking-section {
   padding: 100px 0 110px;
-  background: #faf6f0;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(250, 246, 240, 0.9),
+      rgba(250, 246, 240, 0.84) 48%,
+      rgba(250, 246, 240, 0.93)
+    ),
+    url("images/booking-haircut.jpg") center 42% / cover no-repeat;
   color: #302019;
 }
 
