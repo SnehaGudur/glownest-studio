@@ -2157,6 +2157,10 @@ details p { padding-bottom: 1.25rem; max-width: 38em; color: var(--text-soft); }
   list-style: none;
 }
 
+#faq .faq-list summary::after {
+  content: none;
+}
+
 #faq .faq-list summary::-webkit-details-marker {
   display: none;
 }
