@@ -2276,6 +2276,38 @@ details p { padding-bottom: 1.25rem; max-width: 38em; color: var(--text-soft); }
   backdrop-filter: blur(5px);
 }
 
+/* ---------- Calm, staggered motion ---------- */
+
+.motion-ready .motion-reveal {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition:
+    opacity 720ms cubic-bezier(0.2, 0.65, 0.3, 1),
+    transform 720ms cubic-bezier(0.2, 0.65, 0.3, 1);
+  transition-delay: var(--motion-delay, 0ms);
+}
+
+.motion-ready .motion-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.motion-ready .card.motion-reveal.is-visible:hover {
+  transition-delay: 0ms;
+  transform: translateY(-4px);
+}
+
+@keyframes badge-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready .hero-badge {
+    animation: badge-float 6s ease-in-out infinite;
+  }
+}
+
 
 /* ---------- RESPONSIVE ---------- */
 
@@ -2386,6 +2418,12 @@ details p { padding-bottom: 1.25rem; max-width: 38em; color: var(--text-soft); }
   #book *,
   #faq * {
     scroll-behavior: auto;
+    transition: none !important;
+  }
+
+  .motion-ready .motion-reveal {
+    opacity: 1;
+    transform: none;
     transition: none !important;
   }
 }

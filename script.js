@@ -354,9 +354,53 @@ if ("IntersectionObserver" in window) {
  
   sections.forEach(function (section) { observer.observe(section); });
 }
+
+// =====================================================
+// 7. Gentle entrance motion for the main page content
+// =====================================================
+const motionPreference = window.matchMedia
+  ? window.matchMedia("(prefers-reduced-motion: reduce)")
+  : null;
+
+if ("IntersectionObserver" in window && (!motionPreference || !motionPreference.matches)) {
+  const revealGroups = [
+    ".hero-copy > *, .hero-art",
+    ".section-head",
+    "#serviceCards > .card",
+    ".gallery-section .gallery > .g",
+    "#how .how-step",
+    "#book .booking-reassurance > *, #book .enquiry-form, #book .enquiry-summary",
+    "#reviews .review-demo-card",
+    "#faq .faq-list details",
+    "#contact .contact-box"
+  ];
+  const revealTargets = new Set();
+
+  revealGroups.forEach(function (selector) {
+    document.querySelectorAll(selector).forEach(function (element, index) {
+      element.classList.add("motion-reveal");
+      element.style.setProperty("--motion-delay", Math.min(index * 85, 340) + "ms");
+      revealTargets.add(element);
+    });
+  });
+
+  if (revealTargets.size) {
+    document.documentElement.classList.add("motion-ready");
+    const revealObserver = new IntersectionObserver(function (entries, currentObserver) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+
+    revealTargets.forEach(function (element) { revealObserver.observe(element); });
+  }
+}
  
 // =====================================================
-// 7. Back-to-top button (appears after scrolling down)
+// 8. Back-to-top button (appears after scrolling down)
 // =====================================================
 const toTop = document.getElementById("toTop");
  
